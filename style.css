@@ -11,7 +11,6 @@ body {
   background-color: #f7f7fb;
   color: #222;
 }
-
 /* Header styles */
 .header {
   display: flex;
@@ -311,7 +310,7 @@ body {
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
-/* Card row */
+
 .card-row {
   display: flex;
   flex-wrap: wrap;
@@ -319,7 +318,7 @@ body {
   gap: 25px;
 }
 
-/* Card */
+
 .card {
   background: #e6f2ef;
   border-radius: 20px;
@@ -354,7 +353,7 @@ body {
   color: #004d3a;
 }
 
-/* Button styles */
+
 .btn {
   background-color: #00c896;
   border: none;
@@ -418,7 +417,7 @@ body {
   color: #f0f7f4;
 }
 
-/* Contact box */
+
 .contact-box {
   max-width: 480px;
   margin: 0 auto;
@@ -433,7 +432,7 @@ body {
   text-align: center;
 }
 
-/* Footer */
+
 .footer {
   background-color: #f1f7f3;
   color: #404040;
@@ -444,7 +443,7 @@ body {
   border-top: 1px solid #d1d1d1;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -475,4 +474,39 @@ body {
   .search-bar button {
     margin-top: 10px;
   }
+}
+
+#darkBtn, #promoBtn {
+  padding: 10px 22px;
+  margin: 10px 5px;
+  font-size: 15px;
+  font-weight: 600;
+
+  background:rgb(67, 225, 128);
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+
+#darkBtn:hover, #promoBtn:hover {
+  background: cyan;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+#darkBtn:active, #promoBtn:active {
+  transform: translateY(0px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+#darkBtn, #promoBtn {
+  display: inline-block;
+}
+#offerText{
+  font-weight: bold;
+  color: red;
 }
